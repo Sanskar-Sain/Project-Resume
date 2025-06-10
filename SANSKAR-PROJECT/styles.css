@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+}
+
+.intro h2{
+    color: #6a0dad;
+}
+.intro img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+#skills h2{
+    color: #6a0dad;
+}
+.skill-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+/* Remove default bullet points from <ul> */
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Add bullet to the content after <br> using ::before pseudo-element */
+#projects ul li p {
+    position: relative;
+    padding-left: 20px; /* Space for the bullet */
+    margin: 5px 0;
+}
+
+#projects ul li p::before {
+    content: '•'; /* Bullet character */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #6a0dad; /* Color of the bullet */
+    font-size: 1.2em;
+}
+
+#projects h2 {
+    color: #6a0dad;
+}
+
+.recommendation-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#recommendations h2{
+    color: #6a0dad;
+}
+
+.recommendation-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#leave-recommendation {
+    display: flex;
+   justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #6a0dad;
+    color: #fff;
+    cursor: pointer;
+}
